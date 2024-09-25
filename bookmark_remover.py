@@ -18,7 +18,7 @@ def main():
     if input_path == '0':
         return 0
 
-    level_input = int(input("제거할 레벨보다 높은 레벨을 입력하세요 : "))
+    level_input = int(input("제거를 원하는 레벨 수를 입력하세요 : "))
     output_path = input("수정된 PDF 파일을 저장할 폴더 경로를 입력하세요 : ").strip()
 
     if not os.path.isdir(input_path) and not os.path.isdir(output_path):
