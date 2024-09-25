@@ -16,7 +16,7 @@ def remove_bookmarks(pdf_path, level_threshold, output_folder):
 
     for bookmark in bookmarks:
         level = bookmark[0]
-        if level <= level_threshold:
+        if level < level_threshold:
             new_bookmark_list.append(bookmark)
 
     output_path = os.path.join(output_folder, os.path.basename(pdf_path))
